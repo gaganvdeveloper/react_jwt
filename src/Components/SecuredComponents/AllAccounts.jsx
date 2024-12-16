@@ -81,10 +81,6 @@ const AllAccounts = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <NavLink
         onClick={() => {
           sessionStorage.clear();
