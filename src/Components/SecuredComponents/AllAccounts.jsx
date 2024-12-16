@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const AllAccounts = () => {
   const [reload, setReload] = useState(false);
@@ -78,6 +78,23 @@ const AllAccounts = () => {
           })}
         </div>
       )}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <NavLink
+        onClick={() => {
+          sessionStorage.clear();
+          localStorage.clear();
+        }}
+        to="/"
+        className="px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1"
+      >
+        Logout
+      </NavLink>
     </div>
   );
 };
